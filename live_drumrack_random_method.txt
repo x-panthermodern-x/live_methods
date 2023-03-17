@@ -1,0 +1,57 @@
+To randomly trigger one of the five samples using a single note in Ableton Live's 
+Drum Rack, you can use the following method:
+
+Create a new MIDI track in Ableton Live by right-clicking in the empty area below 
+your existing tracks and selecting "Insert MIDI Track" or pressing Ctrl+Shift+T on
+your keyboard.
+
+Load the Drum Rack onto the new MIDI track by dragging it from the Instruments 
+category in the browser on the left.
+
+Add five instances of the Simpler instrument to a single pad in the Drum Rack. 
+To do this, drag a Simpler onto the pad you want to use in the Drum Rack, and 
+then duplicate it four more times by pressing Ctrl+D or Cmd+D with the Simpler 
+device selected.
+
+Load each of the five samples into the respective Simpler instances by dragging 
+them from the browser or your file system.
+
+On each Simpler instance, open the "Sample" tab (if it's not already open) and 
+adjust the "Playback" setting to "Classic" mode.
+
+Group the five Simpler instances by selecting them all (click the first one, 
+hold Shift, and click the last one), right-clicking, and choosing "Group" or 
+using the shortcut Ctrl+G or Cmd+G. This will create an Instrument Rack.
+
+Click the "Show/Hide Chain List" button in the Instrument Rack to reveal the 
+Chain List. It's the icon that looks like three horizontal lines with circles on 
+the left side of the Instrument Rack.
+
+Right-click in the Chain List and select "Create Chain." This will create a new 
+chain that we'll use to trigger the samples randomly.
+
+With the new chain selected, click the "Show/Hide Macro Controls" button in the 
+Instrument Rack (the knob icon).
+
+Click "Map" in the Macro Controls section and then click the chain selector 
+(the blue vertical line) in the Chain List. This will map the chain selector 
+to a Macro knob.
+
+Set the Macro knob's range to cover all five Simpler chains by adjusting the 
+numbers below the knob. You'll want the range to be from 0 to 127.
+
+Add a "Random" MIDI effect to the MIDI track before the Drum Rack. You can find 
+this effect in the "MIDI Effects" category in the browser.
+
+In the "Random" MIDI effect, set the "Chance" to 100%, "Choices" to 5, 
+"Mode" to "Add," and "Scale" to 100%. This will generate random values 
+between 0 and 4.
+
+Connect the "Random" MIDI effect to the Macro knob by clicking the "Map" 
+button on the Random effect and then clicking the Macro knob in the Instrument 
+Rack.
+
+Now, when you play a single note, the Drum Rack will randomly trigger one 
+of the five samples. The randomization is controlled by the "Random" MIDI effect, 
+which generates a random number between 0 and 4, and the Macro knob distributes 
+the range across the five Simpler instances in the chain list.
